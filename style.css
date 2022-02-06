@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+
+    --light-bg-color:#FAFAFA;
+    --light-active:#616161;
+    --light-disabled:#BDBDBD;
+    --light-text-bold:#424242;
+    --light-text :#757575;
+    --light-button-bg:#EEEEEE;
+    --primary-orange:#FF5722;
+
+    --dark-bg-color:#082032;
+    --dark-button-bg:#2C394B;
+    --dark-text-bold:#F5F5F5;
+    --dark-text:#BDBDBD;
+}
+body.light{
+    background-color: var(--light-bg-color);
+    transition: ease-in 0.5s;
+}
+body.dark{
+    background-color: var(--dark-bg-color);
+    transition: ease-in 0.5s;
+}
+
+div.container{
+display: flex;
+flex-direction: column;
+}
+div.container div.theme-wrapper{
+   margin : 20px 0px 100px 20px;
+}
+div.container div.theme{
+display: flex;
+border-radius: 30px;
+padding: 8px 11px;
+width: fit-content;
+}
+div.container div.light-theme{
+    background-color: var(--light-button-bg);
+    transition: ease-in 0.5s;
+}
+div.container div.dark-theme{
+    background-color: var(--dark-button-bg);
+    transition: ease-in 0.5s;
+}
+
+div.container div.theme div.sun{
+    margin-right: 25px;
+}
+
+div.container div.theme div.sun i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+div.container div.theme div.light-sun i{
+    color: var(--light-active);
+    transition: ease-in 0.5s;
+}
+div.container div.theme div.light-moon i{
+    color: var(--light-disabled);
+    transition: ease-in 0.5s;
+}
+div.container div.theme div.dark-sun i{
+    color: var(--light-active);
+    transition: ease-in 0.5s;
+}
+div.container div.theme div.dark-moon i{
+    color: var(--light-disabled);
+    transition: ease-in 0.5s;
+}
+
+div.container div.theme div.moon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+div.container div.calc-container{
+margin: 0px auto;
+}
+
+div.calc-container div.input-container{
+    margin-bottom: 20px;
+}
+div.calc-container div.input-container div.input:nth-child(1) input{
+    font-size: 35px;
+    padding-right: 10px;
+    width: 360px;
+}
+div.calc-container div.input-container div.light-input:nth-child(1) input{
+    color: var(--light-text-bold);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.input-container div.dark-input:nth-child(1) input{
+    color: var(--dark-text-bold);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.input-container div.input:nth-child(1){
+   margin-bottom: 5px;
+}
+div.calc-container div.input-container div.input:nth-child(2) input{
+    font-size: 22px;
+   
+    padding-right: 10px;
+}
+div.calc-container div.input-container div.light-input:nth-child(2) input{
+    color: var(--light-text);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.input-container div.dark-input:nth-child(2) input{
+    color: var(--dark-text);
+    transition: ease-in 0.5s;
+}
+
+div.calc-container div.input input{
+    text-align: right;
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   outline : none;
+   background-color: transparent;
+   caret-color: transparent;
+}
+
+div.calc-container div.buttons{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+div.calc-container div.light-buttons{
+    background-color: var(--light-button-bg);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.dark-buttons{
+    background-color: var(--dark-button-bg);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.buttons div.row{
+    display: flex; 
+    margin-bottom: 40px;
+}
+div.calc-container div.buttons div.row:nth-child(1){
+    margin-top: 40px;
+}
+div.calc-container div.buttons div.row:nth-child(5){
+    margin-bottom: 20px;
+}
+div.calc-container div.buttons div.row div{
+    width: 50px;
+    text-align: center;
+    margin-right: 40px;
+}
+div.calc-container div.buttons button{
+    background-color: transparent;
+    border : none;
+    font-size: 25px;
+   
+    cursor: pointer;
+}
+div.calc-container div.light-buttons button{
+    color: var(--light-text-bold);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.dark-buttons button{
+    color: var(--dark-text-bold);
+    transition: ease-in 0.5s;
+}
+div.calc-container div.buttons div.row div:nth-child(4){
+    margin-right: 20px;
+    
+}
+div.calc-container div.buttons div.row div:nth-child(4) button{
+    color: var(--primary-orange);
+    
+}
+div.calc-container div.buttons div.row:nth-child(1) div:nth-child(1) button{
+    color: var(--primary-orange);
+    
+}
+div.calc-container div.buttons div.row:nth-child(1) div:nth-child(2) button{
+    color: var(--primary-orange);
+    
+}
+div.calc-container div.buttons div.row:nth-child(1) div:nth-child(3) button{
+    color: var(--primary-orange);
+    
+}
+div.calc-container div.buttons div.row:nth-child(5) div:nth-child(1) button{
+    color: var(--primary-orange);
+    
+}
+
+
+div.calc-container div.buttons div.row div:nth-child(1){
+    margin-left: 20px;
+}
+
+
